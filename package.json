@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "app.js"
+    "test": "app.js",
+    "start": "app.js"
   },
   "author": "",
   "license": "ISC",
