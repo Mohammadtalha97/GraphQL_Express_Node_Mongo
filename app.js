@@ -4,6 +4,7 @@ import graphqlHTTP from "express-graphql"; // ES6
 import schema from "./schema/schemaWithMongoDB.js";
 import mongoose from "mongoose";
 import cors from "cors";
+import path from "path";
 
 const app = new Express();
 
@@ -19,6 +20,10 @@ mongoose.connect(
   },
   () => console.log("DB connected")
 );
+
+//setting middleware
+const __dirname = path.resolve();
+app.use("/static", Express.static(path.join(__dirname, "public")));
 
 app.use(
   "/graphql",
