@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "app.js",
-    "start": "app.js"
+    "start": "node app.js",
+    "dev": "nodemon app"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,14 @@
     "graphql": "^15.3.0",
     "lodash": "^4.17.20",
     "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4"
-  }
+    "nodemon": "^2.0.4",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0"
+  },
+  "devDependencies": {}
 }
